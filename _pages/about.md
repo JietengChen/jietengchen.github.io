@@ -14,7 +14,7 @@ Hi, I’m Jieteng Chen. Welcome to my website!
 I am a Ph.D. Candidate in Marketing at Business School, Chinese University of Hong Kong, advised by Professor T. Tony Ke. Before CUHK, I earned a B.A. in Economics from Xiamen University. I will be on the 2025–2026 academic job market.
 
 
-[**Curriculum Vitae**](https://drive.google.com/file/d/1P99qBXW1YCkmhVx7x-yOj8d-ayxs6LKa/view?usp=sharing)
+[**Curriculum Vitae**](https://jietengchen.github.io/files/CV.pdf)
 
 
 
