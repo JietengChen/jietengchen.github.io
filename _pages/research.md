@@ -8,8 +8,7 @@ author_profile: true
 Publication
 ======
 * "[Regulating Digital Piracy Consumption](https://journals.sagepub.com/doi/10.1177/00222437241256372)'', Jieteng Chen, Yuetao Gao, and T. Tony Ke. *Journal of Marketing Research*, 61.6 (2024): 1096-1115.
-
-+ This paper shows that regulators' penalty on piracy users may inadvertently promote piracy consumption.
+  + This paper shows that regulators' penalty on piracy users may inadvertently promote piracy consumption.
 
 Working Papers
 ======
