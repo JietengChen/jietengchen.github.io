@@ -20,5 +20,5 @@ I am a Ph.D. Candidate in Marketing at Business School, Chinese University of Ho
 
 **Contact**
 
-**Address**: Room 1149, 11/F, Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, New Territories, Hong Kong SAR, China  \
+**Address**: Room 1149, Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, N. T., Hong Kong SAR, China  \
 **Email**: [jieteng.chen@link.cuhk.edu.hk](mailto:jieteng.chen@link.cuhk.edu.hk)  

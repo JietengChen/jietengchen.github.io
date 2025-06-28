@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Xinyu Cao 曹馨宇"
+title                    : "Jieteng Chen"
 title_separator          : "-"
-name                     : &name "Xinyu Cao"
+name                     : &name "Jieteng Chen"
 description              : &description "personal description"
-url                      : https://xinyucao-mkt.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://jietengchen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "xinyucao-mkt/xinyucao-mkt.github.io"
+repository               : "jietengchen/jietengchen.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -83,7 +83,7 @@ analytics:
 author:
   name             : ""
   avatar           : "Identification Photo.jpg"
-  bio              : "Vice-Chancellor Associate Professor of Marketing, CUHK Business School
+  bio              : "PhD Candidate in Marketing, CUHK Business School
 "
   googlescholar    : 
 
