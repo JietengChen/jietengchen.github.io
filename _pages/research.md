@@ -13,7 +13,7 @@ Publication
 
 Working Papers
 ======
-* ["Designing Detection Algorithms for AI-Generated Content: Consumer Inference, Creator Incentives, and Platform Strategy"](https://jietengchen.github.io/files/detection_JMP.pdf), Jieteng Chen*, T. Tony Ke, and Jiwoong Shin, *under review*, *Marketing Science*
+* ["Designing Detection Algorithms for AI-Generated Content: Consumer Inference, Creator Incentives, and Platform Strategy"](https://jietengchen.github.io/files/detection_JMP.pdf), Jieteng Chen, T. Tony Ke, and Jiwoong Shin, *under review*, *Marketing Science*
 
 * ["From Canvas to Blockchain: Impact of Royalties on Art Market Efficiency"](https://jietengchen.github.io/files/art.pdf), Xinyu Cao, Jieteng Chen, Tony Ke, *major revision*, *Management Science*,   (Equal contribution in alphabetical order.)
 
