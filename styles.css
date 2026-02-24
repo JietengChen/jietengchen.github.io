@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "SabonLTStd";
+  src: url("font/sabon/SabonLTStd-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SabonLTStd";
+  src: url("font/sabon/SabonLTStd-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SabonLTStd";
+  src: url("font/sabon/SabonLTStd-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SabonLTStd";
+  src: url("font/sabon/SabonLTStd-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Calluna";
+  src: url("font/calluna/Calluna-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --text: #222;
   --muted: #666;
@@ -11,7 +46,7 @@ body {
   padding: 0;
   background: #fff;
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "SabonLTStd", "Times New Roman", Times, serif;
   line-height: 1.55;
 }
 
@@ -24,7 +59,8 @@ body {
 h1 {
   margin: 0;
   font-size: 2rem;
-  font-weight: 600;
+  font-family: "Calluna", "SabonLTStd", "Times New Roman", Times, serif;
+  font-weight: 400;
 }
 
 .subtitle {
