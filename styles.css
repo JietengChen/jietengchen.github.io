@@ -67,7 +67,7 @@ body::before {
 }
 
 .container {
-  max-width: 61.8%;
+  max-width: 80%;
   margin: 0 auto;
   padding: 52px 48px 80px;
 }
