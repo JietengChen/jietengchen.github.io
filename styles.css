@@ -55,7 +55,7 @@ html, body {
   color: var(--text);
   font-family: "SabonLTStd", "Times New Roman", Times, serif;
   line-height: 1.65;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* Thin accent bar at top */
