@@ -72,6 +72,13 @@ body::before {
   padding: 52px 48px 80px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 92%;
+    padding: 36px 20px 60px;
+  }
+}
+
 /* ── Header ── */
 header {
   margin-bottom: 12px;
