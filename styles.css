@@ -51,11 +51,19 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #fff;
   color: var(--text);
   font-family: "SabonLTStd", "Times New Roman", Times, serif;
   line-height: 1.65;
   font-size: 18px;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top left, #e8eefb 0%, transparent 55%),
+    radial-gradient(ellipse at bottom right, #f0e9f7 0%, transparent 55%),
+    linear-gradient(180deg, #f8f9fc 0%, #f3f5fa 100%);
+  background-attachment: fixed;
 }
 
 /* Thin accent bar at top */
@@ -68,14 +76,19 @@ body::before {
 
 .container {
   max-width: 75%;
-  margin: 0 auto;
-  padding: 52px 48px 80px;
+  margin: 40px auto;
+  padding: 52px 56px 64px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(20, 30, 80, 0.04), 0 8px 32px rgba(20, 30, 80, 0.06);
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 95%;
-    padding: 36px 20px 60px;
+    margin: 16px auto;
+    padding: 36px 24px 48px;
+    border-radius: 8px;
   }
 }
 
