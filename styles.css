@@ -36,15 +36,15 @@
 :root {
   --text: #000;
   --muted: #000;
-  --link: #2d4686;
-  --link-hover: #20345f;
-  --nav-link: #1d356c;
-  --nav-link-hover: #13264d;
-  --paper-link: #162a56;
-  --paper-link-hover: #0f1d3e;
+  --link: #002fa7;
+  --link-hover: #001f74;
+  --nav-link: #002fa7;
+  --nav-link-hover: #001f74;
+  --paper-link: #002fa7;
+  --paper-link-hover: #001f74;
   --line: #d9dfe9;
-  --accent: #2d4686;
-  --accent-light: #f3f6fc;
+  --accent: #002fa7;
+  --accent-light: #eef3ff;
   --paper-border: #cfd7e8;
   --paper-font: "Helvetica Neue", "Arial Nova", Arial, sans-serif;
   --display-font: "Calluna", "SabonLTStd", "Times New Roman", Times, serif;
@@ -81,7 +81,7 @@ body::before {
   content: "";
   display: block;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent) 0%, #6a7eb0 100%);
+  background: linear-gradient(90deg, var(--accent) 0%, #4f72d6 100%);
 }
 
 .container {
@@ -136,7 +136,7 @@ h1 {
   justify-content: center;
   gap: 0;
   flex-wrap: wrap;
-  font-family: var(--display-font);
+  font-family: var(--paper-font);
   font-size: 1rem;
 }
 
@@ -206,7 +206,7 @@ h2 {
 }
 
 .paper-title {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   line-height: 1.38;
   font-size: 1.03rem;
 }
@@ -224,7 +224,7 @@ h2 {
 }
 
 .paper-meta {
-  margin: 0 0 12px;
+  margin: 0 0 9px;
   font-size: 0.95rem;
   color: var(--text);
   line-height: 1.55;
@@ -319,7 +319,7 @@ a:hover {
   }
 
   .paper-meta {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 0.92rem;
   }
 
