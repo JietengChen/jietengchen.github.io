@@ -36,12 +36,20 @@
 :root {
   --text: #000;
   --muted: #000;
-  --link: #1a3bb8;
-  --link-hover: #0f2580;
-  --line: #ddd;
-  --accent: #1a3bb8;
-  --accent-light: #eef1fb;
-  --paper-border: #c8cfe8;
+  --link: #2d4686;
+  --link-hover: #20345f;
+  --nav-link: #1d356c;
+  --nav-link-hover: #13264d;
+  --paper-link: #162a56;
+  --paper-link-hover: #0f1d3e;
+  --line: #d9dfe9;
+  --accent: #2d4686;
+  --accent-light: #f3f6fc;
+  --paper-border: #cfd7e8;
+  --paper-font: "Helvetica Neue", "Arial Nova", Arial, sans-serif;
+  --display-font: "Calluna", "SabonLTStd", "Times New Roman", Times, serif;
+  --card-border: rgba(45, 70, 134, 0.08);
+  --shadow: 0 10px 40px rgba(24, 37, 70, 0.08);
 }
 
 *, *::before, *::after {
@@ -55,14 +63,16 @@ html, body {
   font-family: "SabonLTStd", "Times New Roman", Times, serif;
   line-height: 1.65;
   font-size: 18px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   min-height: 100vh;
   background:
-    radial-gradient(ellipse at top left, #e8eefb 0%, transparent 55%),
-    radial-gradient(ellipse at bottom right, #f0e9f7 0%, transparent 55%),
-    linear-gradient(180deg, #f8f9fc 0%, #f3f5fa 100%);
+    radial-gradient(ellipse at top left, #e7eefb 0%, transparent 54%),
+    radial-gradient(ellipse at bottom right, #f4eee7 0%, transparent 52%),
+    linear-gradient(180deg, #f8fafd 0%, #f3f6fb 100%);
   background-attachment: fixed;
 }
 
@@ -71,46 +81,53 @@ body::before {
   content: "";
   display: block;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent) 0%, #5b75d8 100%);
+  background: linear-gradient(90deg, var(--accent) 0%, #6a7eb0 100%);
 }
 
 .container {
-  max-width: 75%;
-  margin: 40px auto;
-  padding: 52px 56px 64px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(20, 30, 80, 0.04), 0 8px 32px rgba(20, 30, 80, 0.06);
+  width: min(980px, calc(100vw - 48px));
+  margin: 44px auto;
+  padding: 60px 64px 72px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 95%;
-    margin: 16px auto;
-    padding: 36px 24px 48px;
-    border-radius: 8px;
+    width: calc(100% - 24px);
+    margin: 12px auto 20px;
+    padding: 34px 22px 44px;
+    border-radius: 12px;
+    backdrop-filter: none;
   }
 }
 
 /* ── Header ── */
 header {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   text-align: center;
 }
 
 h1 {
-  margin: 0 0 6px;
-  font-size: 2.15rem;
-  font-family: "Calluna", "SabonLTStd", "Times New Roman", Times, serif;
+  margin: 0 0 10px;
+  font-size: clamp(2.3rem, 4.2vw, 3rem);
+  font-family: var(--display-font);
   font-weight: 400;
   letter-spacing: 0.01em;
-  color: #000;
+  line-height: 1.08;
+  color: var(--text);
 }
 
 .subtitle {
-  margin: 0 0 6px;
+  margin: 0 0 12px;
+  font-family: var(--display-font);
   color: var(--muted);
-  font-size: 0.97rem;
+  font-size: 1.08rem;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
 }
 
 .nav-links {
@@ -119,94 +136,126 @@ h1 {
   justify-content: center;
   gap: 0;
   flex-wrap: wrap;
-  font-size: 0.95rem;
+  font-family: var(--display-font);
+  font-size: 1rem;
 }
 
 .nav-links a {
-  color: var(--link);
+  color: var(--nav-link);
   text-decoration: none;
+  font-weight: 400;
   transition: color 0.15s;
 }
 
 .nav-links a:hover {
-  color: var(--link-hover);
+  color: var(--nav-link-hover);
   text-decoration: underline;
 }
 
 .sep {
   margin: 0 10px;
-  color: #000;
+  color: var(--text);
   user-select: none;
 }
 
 /* ── Sections ── */
 section {
-  margin-top: 20px;
+  margin-top: 42px;
 }
 
 h2 {
-  margin: 0 0 3px;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  margin: 0 0 14px;
+  font-size: 0.96rem;
+  font-family: var(--paper-font);
+  font-weight: 600;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #000;
-  padding-bottom: 8px;
+  color: var(--text);
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--line);
 }
 
 /* ── Section intro ── */
 .intro {
-  margin: 0 0 24px;
+  max-width: none;
+  margin: 0 0 30px;
+  font-family: var(--paper-font);
   color: var(--muted);
-  font-size: 0.97rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: left;
+  text-indent: 2em;
 }
 
 /* ── Paper entries ── */
 .paper {
-  margin: 0 0 0px;
-  padding: 14px 0;
-  border-radius: 0 4px 4px 0;
-  transition: background 0.2s;
+  margin: 0;
+  padding: 18px 18px 18px 0;
+  border-radius: 12px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  font-family: var(--paper-font);
 }
 
 .paper:hover {
   background: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+.paper + .paper {
+  margin-top: 10px;
 }
 
 .paper-title {
-  margin: 0 0 4px;
-  line-height: 1.45;
-  font-size: 1rem;
+  margin: 0 0 8px;
+  line-height: 1.38;
+  font-size: 1.03rem;
 }
 
 .paper-title a {
-  color: var(--link);
+  color: var(--paper-link);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   transition: color 0.15s;
 }
 
 .paper-title a:hover {
-  color: var(--link-hover);
+  color: var(--paper-link-hover);
   text-decoration: underline;
 }
 
 .paper-meta {
-  margin: 0 0 8px;
+  margin: 0 0 12px;
   font-size: 0.95rem;
-  color: #000;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.paper-meta em {
+  font-style: italic;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.paper-status {
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.paper-year {
+  color: var(--text);
+  font-weight: 500;
 }
 
 .paper-abstract {
   margin: 0;
-  font-size: 0.93rem;
-  color: #000;
-  line-height: 1.6;
-  font-style: italic;
-  border-left: 2px solid var(--line);
-  padding-left: 12px;
+  max-width: 60rem;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.7;
+  font-style: normal;
+  border-left: 3px solid #d6deeb;
+  padding-left: 16px;
 }
 
 a {
@@ -216,4 +265,70 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body::before {
+    height: 2px;
+  }
+
+  header {
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    margin-bottom: 10px;
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
+  .nav-links {
+    font-size: 0.97rem;
+  }
+
+  .sep {
+    margin: 0 8px;
+  }
+
+  section {
+    margin-top: 34px;
+  }
+
+  h2 {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+  }
+
+  .intro {
+    margin-bottom: 24px;
+    font-size: 0.96rem;
+  }
+
+  .paper {
+    padding: 14px 10px 14px 0;
+  }
+
+  .paper-title {
+    font-size: 1rem;
+  }
+
+  .paper-meta {
+    margin-bottom: 10px;
+    font-size: 0.92rem;
+  }
+
+  .paper-status {
+    font-size: 0.92rem;
+  }
+
+  .paper-abstract {
+    font-size: 0.93rem;
+    padding-left: 14px;
+  }
 }
