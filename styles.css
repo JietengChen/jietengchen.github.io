@@ -1,35 +1,35 @@
 @font-face {
   font-family: "SabonLTStd";
   src: url("font/sabon/SabonLTStd-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SabonLTStd";
   src: url("font/sabon/SabonLTStd-Italic.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: "SabonLTStd";
   src: url("font/sabon/SabonLTStd-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SabonLTStd";
   src: url("font/sabon/SabonLTStd-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Calluna";
   src: url("font/calluna/Calluna-Regular.otf") format("opentype");
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
